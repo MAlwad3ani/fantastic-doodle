@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+    list-style: none;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    transition: all 0.3s;
+}
+
+.wrapper{
+    background: white;
+    border-radius: 30px;
+}
+
+  .answer{
+    display: none;
+    transition: all 0.3s ease;
+  }
+  .active > .answer {
+    display: block;
+    padding-bottom: 1.3rem;
+    color: #2b2a4c;
+  }
+  .active > .box_questions{
+    outline: 2px solid #ea906c;
+}
+.active > .question i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background: #EEE2DE;
+    border-radius: 50%;
+    color: #fff;
+    transform: rotate(360deg);
+    box-shadow: none;
+}
+.accordion__wrapper{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.questions__accordions{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.question-answer__accordion {
+    width: 650px;
+}
+
+.box_questions{
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 20px 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.title__faq{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 0px;
+}
+
+.title_question{
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1.4rem 0rem;
+    color: #2b2a4c;
+}
+
+.question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.question i{
+    color: #d4c1bb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 10px, rgba(17, 17, 26, 0.1) 0px 8px 20px, rgba(17, 17, 26, 0.1) 0px 10px 20px;
+}
+
+section{
+    display: block;
+    text-align: center;
+    background-color: #EEE2DE;
+    
+}
+section h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #b31312;
+    padding: 10px;
+}
+
+section h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #2b2a4c;
+}
